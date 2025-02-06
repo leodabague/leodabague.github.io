@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leo Dabague - Links</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
       .link-card {
         transition: transform 0.2s ease-in-out;
@@ -17,9 +18,12 @@
     <div class="container mx-auto px-4 py-16">
       <div class="max-w-2xl mx-auto">
         <!-- Header -->
-        <div class="text-center mb-12">
-          <h1 class="text-4xl font-bold text-gray-800 mb-2">Leo Dabague</h1>
-          <p class="text-gray-600">Aprendendo com LLms todo dia</p>
+        <div class="relative mb-12">
+          <div class="absolute top-0 left-0 w-full h-2 bg-blue-700"></div>
+          <div class="text-center pt-8">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">Leo Dabague</h1>
+            <p class="text-gray-600">Aprendendo todo dia com LLMs.</p>
+          </div>
         </div>
 
         <!-- Social Links -->
@@ -64,12 +68,18 @@
 
         <!-- Featured Study -->
         <div class="bg-white p-8 rounded-lg shadow-lg">
-          <h2 class="text-2xl font-bold text-gray-800 mb-6">Estudo em Destaque</h2>
+          <h2 class="text-2xl font-bold text-gray-800 mb-6">Conteúdos úteis</h2>
           <div class="space-y-6">
             <a href="https://leodabague.github.io/dash/" target="_blank" class="block">
               <div class="link-card bg-gray-50 p-6 rounded-lg hover:bg-gray-100">
                 <h3 class="text-xl font-semibold text-gray-800 mb-2">Dashboard de Performance</h3>
                 <p class="text-gray-600">Benchmark comparativo de hardware vs. performance para rodar LLMs localmente</p>
+              </div>
+          <div class="space-y-6">
+            <a href="https://leodabague.com/2025/01/26/ia-com-ollama/" target="_blank" class="block">
+              <div class="link-card bg-gray-50 p-6 rounded-lg hover:bg-gray-100">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Tutorial de como rodar LLM local com Ollama</h3>
+                <p class="text-gray-600">Uma IA 100% privada e independente de internet ou compartilhamento de dados.</p>
               </div>
             </a>
           </div>
