@@ -1,12 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Melhores Setups para Ollama</title>
+    <title>Leo Dabague - Links</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+      .link-card {
+        transition: transform 0.2s ease-in-out;
+      }
+      .link-card:hover {
+        transform: translateY(-5px);
+      }
+    </style>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/index.tsx"></script>
+  <body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-16">
+      <div class="max-w-2xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-12">
+          <img src="/api/placeholder/150/150" alt="Profile" class="rounded-full mx-auto mb-6 shadow-lg">
+          <h1 class="text-4xl font-bold text-gray-800 mb-2">Leo Dabague</h1>
+          <p class="text-gray-600">Pesquisador e Entusiasta de LLMs</p>
+        </div>
+
+        <!-- Social Links -->
+        <div class="grid gap-4 mb-12">
+          <a href="https://leodabague.com" target="_blank" class="link-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl flex items-center">
+            <div class="bg-blue-100 p-3 rounded-full mr-4">
+              <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h2 class="text-xl font-semibold text-gray-800">Blog</h2>
+              <p class="text-gray-600">leodabague.com</p>
+            </div>
+          </a>
+
+          <a href="https://youtube.com/@LeoDabague" target="_blank" class="link-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl flex items-center">
+            <div class="bg-red-100 p-3 rounded-full mr-4">
+              <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h2 class="text-xl font-semibold text-gray-800">YouTube</h2>
+              <p class="text-gray-600">@LeoDabague</p>
+            </div>
+          </a>
+
+          <a href="https://www.threads.net/@leodabague" target="_blank" class="link-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl flex items-center">
+            <div class="bg-purple-100 p-3 rounded-full mr-4">
+              <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
+              </svg>
+            </div>
+            <div>
+              <h2 class="text-xl font-semibold text-gray-800">Threads</h2>
+              <p class="text-gray-600">@leodabague</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Featured Study -->
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-bold text-gray-800 mb-6">Estudo em Destaque</h2>
+          <div class="space-y-6">
+            <a href="https://leodabague.github.io/dash/" target="_blank" class="block">
+              <div class="link-card bg-gray-50 p-6 rounded-lg hover:bg-gray-100">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Dashboard de Performance</h3>
+                <p class="text-gray-600">Benchmark comparativo de hardware vs. performance para rodar LLMs localmente</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
